@@ -115,7 +115,7 @@ It fails if `metadata.ini` still has the template placeholders, a field is missi
 
 Commit your theme folder and nothing else. Title the pull request `[create-theme]: <theme-name>` for a new theme, or `[update-theme]: <theme-name>` for a change. Please don't edit `themes.json` or the gallery in `README.md`. They are generated, and hand edits get overwritten.
 
-Including the `.fctheme` in your pull request is optional. The workflow builds it anyway.
+Including the `.fctheme` in your pull request is optional. The workflow builds it anyway. The pull request description comes pre-filled with a checklist, please go through it.
 
 A pull request needs:
 
