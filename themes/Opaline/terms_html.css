@@ -1,0 +1,32 @@
+body {
+    background-color: #efe9f9 !important;
+    color: #5b21b6 !important;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #241f33 !important;
+    border-color: #7c3aed !important;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', sans-serif;
+}
+h1 { font-size: 20px; }
+h2 { font-size: 16px; }
+h3 { font-size: 14px; }
+h4 { font-size: 13px; }
+p, li, td, th, div, span { color: #5b21b6 !important; margin: 8px 0; }
+a { color: #7c3aed !important; text-decoration: none; }
+a:hover { color: #4c1d95 !important; text-decoration: underline; }
+strong, b { color: #241f33 !important; font-weight: 600; }
+em, i { color: #6b5b8a !important; }
+hr { border: 0; border-top: 1px solid rgba(120,92,168,0.34) !important; margin: 15px 0; }
+ul, ol { color: #5b21b6 !important; padding-left: 20px; margin: 10px 0; }
+li { margin-bottom: 5px; }
+* { background-color: transparent !important; }
+body, html { background-color: #efe9f9 !important; }
+.highlight { background-color: rgba(124,58,237,0.14) !important; padding: 2px 4px; border-radius: 3px; }
+.warning { color: #dc2626 !important; font-weight: bold; }

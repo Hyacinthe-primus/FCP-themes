@@ -1,0 +1,27 @@
+/* Riso Press Night: language list scroll area */
+
+QScrollArea {
+    background: #181b2a;
+    border: none;
+}
+
+QScrollBar:vertical {
+    background: #181b2a;
+    width: 10px;
+    margin: 0;
+    border: none;
+    border-left: 1px solid #2a2f4a;
+}
+QScrollBar::handle:vertical {
+    background: #b9b5a8;
+    border: 2px solid #181b2a;
+    border-radius: 3px;
+    min-height: 24px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #3d63ff;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+}

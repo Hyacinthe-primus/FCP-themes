@@ -1,0 +1,42 @@
+/* Shoji: checkable option cards */
+
+QGroupBox {
+    font-weight: bold;
+    font-size: 15px;
+    color: #6f6450;
+    background-color: #faf6ec;
+    border: none; border-bottom: 1px solid #a8801f;
+    margin-top: 16px;
+    padding-top: 16px;
+    margin-left: 2px;
+}
+QGroupBox:checked {
+    color: #211b14;
+    background-color: #f3eddf;
+    border: none; border-bottom: 2px solid #c8321e;
+}
+QGroupBox:unchecked:hover { background-color: #fffdf6; }
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 28px;
+    padding: 0 8px;
+    color: #6f6450;
+}
+QGroupBox:checked::title { color: #c8321e; }
+QGroupBox::indicator {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    margin-right: 6px;
+    border: 1px solid #6f5214; border-radius: 1px; background: #fffdf6;
+}
+QGroupBox::indicator:unchecked:hover { border-color: #c8321e; }
+QGroupBox::indicator:checked {
+    border: 1px solid #5b3d0e; border-radius: 1px; background: #c8321e;
+}
+
+QToolTip {
+    background-color: #211b14; color: #f3eddf;
+    border: 1px solid #a8801f; border-radius: 0px;
+    padding: 7px 10px; font-size: 12px;
+}

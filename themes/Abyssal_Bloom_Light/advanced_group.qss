@@ -1,0 +1,68 @@
+/* Abyssal Bloom: checkable advanced option cards */
+
+QGroupBox {
+    font-weight: bold;
+    font-size: 16px;
+    color: #8fb3b8;
+    background-color: #f5fbfa;
+    border: 1.5px solid rgba(8,133,122,0.20);
+    border-top-left-radius: 14px; border-bottom-right-radius: 14px; border-top-right-radius: 4px; border-bottom-left-radius: 4px;
+    margin-top: 16px;
+    padding-top: 16px;
+    margin-left: 2px;
+}
+QGroupBox:checked {
+    color: #05564f;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #d6efec, stop:1 #e7f3f2);
+    border: 1.5px solid #08857a;
+}
+QGroupBox:unchecked:hover {
+    border: 1.5px solid rgba(8,133,122,0.40);
+    background-color: #ffffff;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 30px;
+    padding: 0 10px;
+    color: #8fb3b8;
+}
+QGroupBox:checked::title {
+    color: #05564f;
+}
+
+QGroupBox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    border: 2px solid rgba(8,133,122,0.40);
+    background: qradialgradient(cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+        stop:0 #d5ebea, stop:1 #f5fbfa);
+    margin-right: 6px;
+    margin-top: 3px;
+}
+QGroupBox::indicator:unchecked:hover {
+    border: 2px solid #08857a;
+    background: qradialgradient(cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+        stop:0 #b8dcdc, stop:0.6 #d5ebea, stop:1 #f5fbfa);
+}
+QGroupBox::indicator:checked {
+    border: 2px solid #08857a;
+    background: qradialgradient(cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+        stop:0 #ffffff, stop:0.25 #05564f,
+        stop:0.38 #08857a, stop:0.65 #08857a, stop:1 #a01c78);
+}
+QGroupBox::indicator:checked:hover {
+    border: 2px solid #05564f;
+    background: qradialgradient(cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+        stop:0 #ffffff, stop:0.3 #e0fffa,
+        stop:0.4 #05564f, stop:0.65 #08857a, stop:1 #c4168f);
+}
+
+QToolTip {
+    background-color: #0b2f36;
+    color: #e7f3f2;
+    border: 1px solid #0b2f36;
+    border-radius: 4px;
+    padding: 7px 10px;
+    font-size: 12px;
+}

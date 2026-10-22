@@ -1,0 +1,42 @@
+/* Kintsugi: checkable option cards */
+
+QGroupBox {
+    font-weight: bold;
+    font-size: 15px;
+    color: #8f846b;
+    background-color: #1b1612;
+    border: none; border-bottom: 1px solid #d4a24c;
+    margin-top: 16px;
+    padding-top: 16px;
+    margin-left: 2px;
+}
+QGroupBox:checked {
+    color: #efe6d2;
+    background-color: #14100d;
+    border: none; border-bottom: 2px solid #d6452d;
+}
+QGroupBox:unchecked:hover { background-color: #231d18; }
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 28px;
+    padding: 0 8px;
+    color: #8f846b;
+}
+QGroupBox:checked::title { color: #d6452d; }
+QGroupBox::indicator {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    margin-right: 6px;
+    border: 1px solid #d4a24c; border-radius: 1px; background: #14100d;
+}
+QGroupBox::indicator:unchecked:hover { border-color: #d6452d; }
+QGroupBox::indicator:checked {
+    border: 1px solid #e8c170; border-radius: 1px; background: #d6452d;
+}
+
+QToolTip {
+    background-color: #0b0806; color: #efe6d2;
+    border: 1px solid #d4a24c; border-radius: 0px;
+    padding: 7px 10px; font-size: 12px;
+}

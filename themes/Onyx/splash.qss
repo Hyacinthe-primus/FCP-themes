@@ -1,0 +1,46 @@
+/* Splash screen - Onyx theme */
+
+QFrame#SplashContainer {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #15171b, stop:1 #141619);
+    border: 1px solid #2c3138;
+    border-radius: 20px;
+}
+
+QLabel#SplashLogo {
+    font-size: 60px;
+    background: transparent;
+}
+
+QLabel#SplashTitle {
+    color: #e8eaed;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: transparent;
+}
+
+QLabel#SplashSubtitle {
+    color: #8a929b;
+    font-size: 14px;
+    margin: 5px;
+    background: transparent;
+}
+
+QProgressBar#SplashProgress {
+    background-color: #3b3d41;
+    border: none;
+    border-radius: 4px;
+}
+
+QProgressBar#SplashProgress::chunk {
+    background-color: #2f9e6b;
+    border-radius: 4px;
+}
+
+QLabel#SplashProgressText {
+    color: #8a929b;
+    font-size: 12px;
+    margin-top: 5px;
+    background: transparent;
+}

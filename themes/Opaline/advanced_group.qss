@@ -1,0 +1,45 @@
+/* Opaline: checkable option cards */
+
+QGroupBox {
+    font-weight: bold;
+    font-size: 15px;
+    color: #9a8fb5;
+    background-color: #efe9f9;
+    border: 1px solid rgba(120,92,168,0.20); border-radius: 14px;
+    margin-top: 16px;
+    padding-top: 16px;
+    margin-left: 2px;
+}
+QGroupBox:checked {
+    color: #241f33;
+    background-color: #f7f4fc;
+    border: 1.5px solid #8b5cf6; border-radius: 14px;
+}
+QGroupBox:unchecked:hover { background-color: #ffffff; }
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 28px;
+    padding: 0 8px;
+    color: #9a8fb5;
+}
+QGroupBox:checked::title { color: #7c3aed; }
+QGroupBox::indicator {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    margin-right: 6px;
+    border: 2px solid #c9b8ee; border-radius: 9px; background: #ffffff;
+}
+QGroupBox::indicator:unchecked:hover { border-color: #7c3aed; }
+QGroupBox::indicator:checked {
+    border: 2px solid #8b5cf6; border-radius: 9px; background: qradialgradient(cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 #ffffff, stop:0.3 #f0abfc, stop:0.45 #8b5cf6, stop:1 #6d28d9);
+}
+
+QToolTip {
+    background-color: #241f33;
+    color: #f7f4fc;
+    border: 1px solid #241f33;
+    border-radius: 4px;
+    padding: 7px 10px;
+    font-size: 12px;
+}

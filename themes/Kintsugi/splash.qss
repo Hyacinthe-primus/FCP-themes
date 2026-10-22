@@ -1,0 +1,46 @@
+/* Splash screen - Kintsugi theme */
+
+QFrame#SplashContainer {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #14100d, stop:1 #130f0c);
+    border: 1px solid rgba(212,162,76,0.22);
+    border-radius: 20px;
+}
+
+QLabel#SplashLogo {
+    font-size: 60px;
+    background: transparent;
+}
+
+QLabel#SplashTitle {
+    color: #efe6d2;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: transparent;
+}
+
+QLabel#SplashSubtitle {
+    color: #8f846b;
+    font-size: 14px;
+    margin: 5px;
+    background: transparent;
+}
+
+QProgressBar#SplashProgress {
+    background-color: #3b3730;
+    border: none;
+    border-radius: 4px;
+}
+
+QProgressBar#SplashProgress::chunk {
+    background-color: #d4a24c;
+    border-radius: 4px;
+}
+
+QLabel#SplashProgressText {
+    color: #8f846b;
+    font-size: 12px;
+    margin-top: 5px;
+    background: transparent;
+}

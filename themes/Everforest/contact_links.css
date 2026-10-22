@@ -1,0 +1,8 @@
+body { color: #6f7d74; background-color: #fdf6e3; font-size: 9px; margin: 0; padding: 0; }
+a { color: #8da101; text-decoration: none; font-weight: 500; }
+a:hover { color: #2a7f5c; text-decoration: underline; }
+ul { margin: 2px 0; padding-left: 15px; }
+li { margin: 1px 0; }
+p { margin: 2px 0; line-height: 1.4; }
+strong { color: #8da101; font-weight: 600; }
+.warning { color: #e04542 !important; font-weight: 600; }

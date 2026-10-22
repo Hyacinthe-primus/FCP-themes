@@ -1,0 +1,46 @@
+/* Splash screen - Abyssal_Bloom_Light theme */
+
+QFrame#SplashContainer {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #e7f3f2, stop:1 #d9e4e3);
+    border: 1px solid rgba(8,133,122,0.20);
+    border-radius: 20px;
+}
+
+QLabel#SplashLogo {
+    font-size: 60px;
+    background: transparent;
+}
+
+QLabel#SplashTitle {
+    color: #0b2f36;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: transparent;
+}
+
+QLabel#SplashSubtitle {
+    color: #4d8088;
+    font-size: 14px;
+    margin: 5px;
+    background: transparent;
+}
+
+QProgressBar#SplashProgress {
+    background-color: #bfd0d0;
+    border: none;
+    border-radius: 4px;
+}
+
+QProgressBar#SplashProgress::chunk {
+    background-color: #08857a;
+    border-radius: 4px;
+}
+
+QLabel#SplashProgressText {
+    color: #4d8088;
+    font-size: 12px;
+    margin-top: 5px;
+    background: transparent;
+}

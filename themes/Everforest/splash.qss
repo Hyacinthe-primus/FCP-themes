@@ -1,0 +1,46 @@
+/* Splash screen - Everforest_Light theme */
+
+QFrame#SplashContainer {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #fdf6e3, stop:1 #eee7d5);
+    border: 1px solid #efebd4;
+    border-radius: 20px;
+}
+
+QLabel#SplashLogo {
+    font-size: 60px;
+    background: transparent;
+}
+
+QLabel#SplashTitle {
+    color: #5c6a72;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: transparent;
+}
+
+QLabel#SplashSubtitle {
+    color: #7d8b80;
+    font-size: 14px;
+    margin: 5px;
+    background: transparent;
+}
+
+QProgressBar#SplashProgress {
+    background-color: #e0ddcf;
+    border: none;
+    border-radius: 4px;
+}
+
+QProgressBar#SplashProgress::chunk {
+    background-color: #8da101;
+    border-radius: 4px;
+}
+
+QLabel#SplashProgressText {
+    color: #7d8b80;
+    font-size: 12px;
+    margin-top: 5px;
+    background: transparent;
+}

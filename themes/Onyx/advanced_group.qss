@@ -1,0 +1,45 @@
+/* Onyx: checkable option cards */
+
+QGroupBox {
+    font-weight: bold;
+    font-size: 15px;
+    color: #6a727b;
+    background-color: #1e2126;
+    border: 1px solid #2c3138; border-left: 3px solid #2f9e6b; border-radius: 2px;
+    margin-top: 16px;
+    padding-top: 16px;
+    margin-left: 2px;
+}
+QGroupBox:checked {
+    color: #e8eaed;
+    background-color: #15171b;
+    border: 1px solid #2f9e6b; border-left: 4px solid #4ade80; border-radius: 2px;
+}
+QGroupBox:unchecked:hover { background-color: #1a1d22; }
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 28px;
+    padding: 0 8px;
+    color: #6a727b;
+}
+QGroupBox:checked::title { color: #2f9e6b; }
+QGroupBox::indicator {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    margin-right: 6px;
+    border: 1px solid #6a727b; border-radius: 2px; background: #1a1d22;
+}
+QGroupBox::indicator:unchecked:hover { border-color: #2f9e6b; }
+QGroupBox::indicator:checked {
+    border: 1px solid #4ade80; border-radius: 2px; background: #2f9e6b;
+}
+
+QToolTip {
+    background-color: #0e1012;
+    color: #e8eaed;
+    border: 1px solid #2f9e6b;
+    border-radius: 4px;
+    padding: 7px 10px;
+    font-size: 12px;
+}

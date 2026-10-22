@@ -1,0 +1,46 @@
+/* Splash screen - Catppuccin_Mocha theme */
+
+QFrame#SplashContainer {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #1e1e2e, stop:1 #1c1c2b);
+    border: 1px solid #313244;
+    border-radius: 20px;
+}
+
+QLabel#SplashLogo {
+    font-size: 60px;
+    background: transparent;
+}
+
+QLabel#SplashTitle {
+    color: #cdd6f4;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: transparent;
+}
+
+QLabel#SplashSubtitle {
+    color: #9399b2;
+    font-size: 14px;
+    margin: 5px;
+    background: transparent;
+}
+
+QProgressBar#SplashProgress {
+    background-color: #3e3f52;
+    border: none;
+    border-radius: 4px;
+}
+
+QProgressBar#SplashProgress::chunk {
+    background-color: #cba6f7;
+    border-radius: 4px;
+}
+
+QLabel#SplashProgressText {
+    color: #9399b2;
+    font-size: 12px;
+    margin-top: 5px;
+    background: transparent;
+}

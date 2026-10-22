@@ -1,0 +1,14 @@
+/* Kintsugi: language list scroll area */
+
+QScrollArea { background: #1b1612; border: none; }
+
+QScrollBar:vertical { background: #14100d; width: 9px; margin: 0; border: none; }
+QScrollBar::handle:vertical { background: #8f6a26; border-radius: 0px; min-height: 30px; }
+QScrollBar::handle:vertical:hover { background: #d4a24c; }
+QScrollBar:horizontal { background: #14100d; height: 9px; margin: 0; border: none; }
+QScrollBar::handle:horizontal { background: #8f6a26; border-radius: 0px; min-width: 30px; }
+QScrollBar::handle:horizontal:hover { background: #d4a24c; }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal { width: 0; }
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical,
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal { background: transparent; }

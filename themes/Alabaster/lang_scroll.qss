@@ -1,0 +1,14 @@
+/* Alabaster: language list scroll area */
+
+QScrollArea { background: #ffffff; border: none; }
+
+QScrollBar:vertical { background: #f7f3ec; width: 8px; margin: 0; border: none; }
+QScrollBar::handle:vertical { background: #ddd0b8; border-radius: 0px; min-height: 30px; }
+QScrollBar::handle:vertical:hover { background: #b8641f; }
+QScrollBar:horizontal { background: #f7f3ec; height: 8px; margin: 0; border: none; }
+QScrollBar::handle:horizontal { background: #ddd0b8; border-radius: 0px; min-width: 30px; }
+QScrollBar::handle:horizontal:hover { background: #b8641f; }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal { width: 0; }
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical,
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal { background: transparent; }

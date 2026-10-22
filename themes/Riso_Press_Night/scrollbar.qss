@@ -1,0 +1,57 @@
+/* Riso Press Night: global scrollbars */
+
+QScrollBar:vertical {
+    background-color: #181b2a;
+    width: 14px;
+    margin: 0px;
+    border: none;
+    border-left: 1px solid #2a2f4a;
+}
+QScrollBar::handle:vertical {
+    background-color: #b9b5a8;
+    border: 3px solid #181b2a;
+    border-radius: 4px;
+    min-height: 30px;
+}
+QScrollBar::handle:vertical:hover {
+    background-color: #3d63ff;
+}
+QScrollBar::handle:vertical:pressed {
+    background-color: #ff5c8a; color: #14162a;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background-color: #181b2a;
+}
+
+QScrollBar:horizontal {
+    background-color: #181b2a;
+    height: 14px;
+    margin: 0px;
+    border: none;
+    border-top: 1px solid #2a2f4a;
+}
+QScrollBar::handle:horizontal {
+    background-color: #b9b5a8;
+    border: 3px solid #181b2a;
+    border-radius: 4px;
+    min-width: 30px;
+}
+QScrollBar::handle:horizontal:hover {
+    background-color: #3d63ff;
+}
+QScrollBar::handle:horizontal:pressed {
+    background-color: #ff5c8a; color: #14162a;
+}
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background-color: #181b2a;
+}

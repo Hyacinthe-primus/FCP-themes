@@ -1,0 +1,42 @@
+/* Everforest Light: checkable option cards */
+
+QGroupBox {
+    font-weight: bold;
+    font-size: 15px;
+    color: #7d8b80;
+    background-color: #f4f0d9;
+    border: 1px solid #e0dcc7; border-bottom: 2px solid #e0dcc7; border-radius: 4px;
+    margin-top: 16px;
+    padding-top: 16px;
+    margin-left: 2px;
+}
+QGroupBox:checked {
+    color: #5c6a72;
+    background-color: #fdf6e3;
+    border: 1px solid #2a7f5c; border-bottom: 2px solid #8da101; border-radius: 4px;
+}
+QGroupBox:unchecked:hover { background-color: #efebd4; }
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 28px;
+    padding: 0 8px;
+    color: #7d8b80;
+}
+QGroupBox:checked::title { color: #8da101; }
+QGroupBox::indicator {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    margin-right: 6px;
+    border: 2px solid #bdc3af; border-radius: 6px; background: #fffbef;
+}
+QGroupBox::indicator:unchecked:hover { border-color: #8da101; }
+QGroupBox::indicator:checked {
+    border: 2px solid #8da101; border-radius: 6px; background: #8da101;
+}
+
+QToolTip {
+    background-color: #425047; color: #f3ead3;
+    border: 1px solid #6f8100; border-radius: 4px;
+    padding: 7px 11px; font-size: 12px;
+}

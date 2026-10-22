@@ -1,0 +1,269 @@
+/* Catppuccin Mocha: settings dialog */
+
+QDialog, QWidget {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    font-size: 13px;
+}
+
+QLabel { color: #cdd6f4; background: transparent; }
+
+QScrollArea, QScrollArea > QWidget, QScrollArea > QWidget > QWidget {
+    background-color: transparent;
+    border: none;
+}
+
+QGroupBox {
+    font-family: 'JetBrains Mono', 'Cascadia Mono', 'Consolas', monospace;
+    font-weight: 700;
+    font-size: 10px;
+    border: 1px solid #313244;
+    border-top: 3px solid #cba6f7;
+    border-radius: 14px;
+    margin-top: 16px;
+    padding-top: 12px;
+    background-color: #181825;
+    color: #b4befe;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 16px;
+    padding: 0 8px;
+    color: #b4befe;
+    font-family: 'JetBrains Mono', 'Cascadia Mono', 'Consolas', monospace;
+}
+
+QComboBox {
+    background-color: #11111b;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-bottom: 2px solid #45475a;
+    border-radius: 10px;
+    padding: 6px 11px;
+    font-size: 13px;
+    min-width: 110px;
+}
+
+QComboBox:hover { border-color: #585b70; }
+
+QComboBox:focus { border: 1px solid #b4befe; border-bottom: 2px solid #cba6f7; }
+
+QComboBox::drop-down { border: none; width: 28px; }
+
+QComboBox::down-arrow {
+    image: none; width: 0; height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #f5c2e7;
+    margin-right: 8px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #181825;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 10px;
+    selection-background-color: rgba(203,166,247,0.18);
+    selection-color: #b4befe;
+    outline: none;
+}
+
+QListWidget {
+    background-color: #181825;
+    color: #cdd6f4;
+    border: 1px solid #313244;
+    border-radius: 14px;
+    font-size: 13px;
+    outline: none;
+}
+
+QListWidget::item { padding: 8px 12px; margin: 2px 5px; border-radius: 9px; }
+
+QListWidget::item:hover { background-color: #313244; }
+
+QListWidget::item:selected { background-color: rgba(203,166,247,0.38); color: #ffffff; font-weight: 700; }
+
+QPushButton {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-bottom: 3px solid #45475a;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 6px 16px;
+}
+
+QPushButton:hover { background-color: #45475a; color: #ffffff; border-bottom: 3px solid #cba6f7; }
+
+QPushButton:pressed { background-color: #cba6f7; color: #11111b; border: 1px solid #cba6f7; border-bottom: 3px solid #f5c2e7; }
+
+QPushButton:disabled { background-color: #181825; color: #585b70; border: 1px solid #313244; border-bottom: 3px solid #313244; }
+
+QCheckBox, QRadioButton { background: transparent; color: #cdd6f4; spacing: 8px; font-size: 13px; }
+
+QCheckBox::indicator, QRadioButton::indicator {
+    width: 14px; height: 14px;
+    border: 2px solid #585b70;
+    background-color: #11111b;
+}
+
+QCheckBox::indicator { border-radius: 6px; }
+
+QRadioButton::indicator { border-radius: 9px; }
+
+QCheckBox::indicator:hover, QRadioButton::indicator:hover { border-color: #cba6f7; }
+
+QCheckBox::indicator:checked { background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #cba6f7, stop:0.55 #f5c2e7, stop:1 #fab387); border: 2px solid #cba6f7; }
+
+QRadioButton::indicator:checked {
+    border: 2px solid #cba6f7;
+    background: qradialgradient(cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+        stop:0 #f5c2e7, stop:0.4 #f5c2e7, stop:0.5 #11111b, stop:1 #11111b);
+}
+
+QCheckBox::indicator:disabled, QRadioButton::indicator:disabled { background-color: #181825; border-color: #313244; }
+
+QScrollBar:vertical { background: transparent; width: 10px; margin: 2px; border: none; }
+
+QScrollBar::handle:vertical { background: #45475a; border-radius: 4px; min-height: 30px; }
+
+QScrollBar::handle:vertical:hover { background: #cba6f7; }
+
+QScrollBar:horizontal { background: transparent; height: 10px; margin: 2px; border: none; }
+
+QScrollBar::handle:horizontal { background: #45475a; border-radius: 4px; min-width: 30px; }
+
+QScrollBar::handle:horizontal:hover { background: #cba6f7; }
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal { width: 0; }
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical,
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal { background: transparent; }
+
+QToolTip {
+    background-color: #11111b; color: #cdd6f4;
+    border: 1px solid #b4befe; border-radius: 10px;
+    padding: 7px 11px; font-size: 12px;
+}
+
+QDialog { background-color: #1e1e2e; color: #cdd6f4; }
+
+QLabel { color: #cdd6f4; background: transparent; }
+
+QMessageBox QPushButton { padding: 7px 14px; min-width: 10px; min-height: 14px; }
+
+/* Settings dialog: object-name rules */
+
+QLabel#SettingsLabel { font-size: 12px; color: #9399b2; }
+QLabel#SettingsActiveLabel { font-weight: bold; font-size: 13px; color: #b4befe; }
+QLabel#SettingsHint { color: #9399b2; font-size: 10px; font-style: italic; background: transparent; }
+
+QWidget#SettingsAutomationTab, QWidget#SettingsThemeTab, QWidget#SettingsLanguageTab { background-color: #1e1e2e; }
+
+QFrame#SettingsCard { border: 1px solid #313244; border-radius: 14px; background-color: #181825; }
+QLabel#SettingsStatusDot { font-size: 14px; border: none; }
+QLabel#SettingsCardName { font-weight: bold; font-size: 12px; color: #cdd6f4; border: none; }
+QLabel#SettingsCardPath { font-size: 10px; color: #9399b2; border: none; }
+QLabel#SettingsEmptyLabel { color: #9399b2; font-size: 11px; font-style: italic; }
+QWidget#SettingsScrollInner { background-color: #181825; }
+
+QGroupBox#SettingsGroup {
+    font-family: 'JetBrains Mono', 'Cascadia Mono', 'Consolas', monospace;
+    border: 1px solid #313244;
+    border-top: 3px solid #cba6f7;
+    border-radius: 14px;
+    margin-top: 16px;
+    padding-top: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #181825;
+    color: #b4befe;
+}
+QGroupBox#SettingsGroup::title {
+    subcontrol-origin: margin;
+    left: 14px;
+    padding: 0 8px;
+    color: #b4befe;
+    font-family: 'JetBrains Mono', 'Cascadia Mono', 'Consolas', monospace;
+}
+
+QFrame#SettingsListCard { border: 2px solid #313244; border-radius: 14px; background-color: #313244; padding: 2px; }
+QFrame#SettingsListCard[active="true"] { border: 2px solid #cba6f7; background-color: rgba(203,166,247,0.14); }
+
+QLabel#SettingsListBadge { padding: 2px 8px; border-radius: 8px; font-size: 10px; font-weight: bold; border: none; }
+QLabel#SettingsListBadge[kind="active"] { background-color: #cba6f7; color: #11111b; }
+QLabel#SettingsListBadge[kind="builtin"] { background-color: #a6adc8; color: #11111b; }
+QLabel#SettingsListBadge[kind="external"] { background-color: #f38ba8; color: #11111b; }
+
+QLabel#SettingsListName { font-weight: bold; font-size: 13px; color: #cdd6f4; border: none; background: transparent; }
+QLabel#SettingsListMeta { color: #9399b2; font-size: 10px; border: none; background: transparent; }
+QLabel#SettingsListPreview { border: 1px solid #313244; border-radius: 6px; background-color: #313244; }
+
+QPushButton#SettingsApplyBtn {
+    background-color: #313244; color: #b4befe; border: 1px solid #45475a;
+    padding: 5px 10px; border-radius: 12px; font-size: 11px; font-weight: bold;
+}
+QPushButton#SettingsApplyBtn:hover { background-color: #cba6f7; color: #11111b; }
+QPushButton#SettingsApplyBtn:pressed { background-color: #f38ba8; color: #11111b; }
+
+QPushButton#SettingsRemoveBtn {
+    background-color: #313244; color: #f38ba8; border: 1px solid #f38ba8;
+    padding: 4px; border-radius: 12px; font-size: 13px;
+}
+QPushButton#SettingsRemoveBtn:hover { background-color: #f38ba8; color: #11111b; }
+
+QPushButton#SettingsOkBtn {
+    background-color: #cba6f7; color: #11111b; border: 1px solid #a07fd0;
+    padding: 8px 16px; border-radius: 12px; font-weight: bold;
+}
+QPushButton#SettingsOkBtn:hover { background-color: #d9bcfa; }
+QPushButton#SettingsOkBtn:pressed { background-color: #a07fd0; color: #11111b; }
+
+QPushButton#SettingsBrowseBtn {
+    background-color: #313244; color: #cdd6f4; border: 1px solid #45475a;
+    padding: 8px 16px; border-radius: 12px; font-weight: bold;
+}
+QPushButton#SettingsBrowseBtn:hover { background-color: #45475a; color: #b4befe; border-color: #cba6f7; }
+QPushButton#SettingsBrowseBtn:pressed { background-color: #cba6f7; color: #11111b; border-color: #a07fd0; }
+
+QPushButton#SettingsCancelBtn {
+    background-color: transparent; color: #9399b2; border: 1px solid #313244;
+    padding: 8px 16px; border-radius: 12px; font-weight: bold;
+}
+QPushButton#SettingsCancelBtn:hover { background-color: #45475a; color: #cdd6f4; border-color: #cba6f7; }
+QPushButton#SettingsCancelBtn:pressed { background-color: #585b70; color: #b4befe; }
+
+QPushButton#SettingsRestoreBtn {
+    background-color: transparent; color: #f38ba8; border: 1px solid #f38ba8;
+    padding: 8px 16px; border-radius: 12px; font-weight: bold;
+}
+QPushButton#SettingsRestoreBtn:hover { background-color: rgba(243,139,168,0.14); color: #f38ba8; border-color: #f38ba8; }
+QPushButton#SettingsRestoreBtn:pressed { background-color: #f38ba8; color: #11111b; border-color: #a07fd0; }
+
+/* Settings dialog: install / import buttons */
+
+QPushButton#SettingsImportBtn {
+    background-color: #313244; color: #b4befe; border: 1px solid #45475a;
+    padding: 8px 16px; border-radius: 12px; font-weight: bold;
+}
+QPushButton#SettingsImportBtn:hover { background-color: #cba6f7; color: #11111b; }
+QPushButton#SettingsImportBtn:pressed { background-color: #f38ba8; color: #11111b; }
+
+/* Settings dialog: automation action buttons */
+QPushButton#SettingsAutomationOpenBtn {
+    background-color: #cba6f7; color: #11111b; border: 1px solid #a07fd0;
+    padding: 8px 16px; border-radius: 12px; font-weight: bold;
+}
+QPushButton#SettingsAutomationOpenBtn:hover { background-color: #d9bcfa; }
+QPushButton#SettingsAutomationOpenBtn:pressed { background-color: #a07fd0; color: #11111b; }
+QPushButton#SettingsAutomationReloadBtn {
+    background-color: #313244; color: #b4befe; border: 1px solid #45475a;
+    padding: 8px 16px; border-radius: 12px; font-weight: bold;
+}
+QPushButton#SettingsAutomationReloadBtn:hover { background-color: #cba6f7; color: #11111b; }
+QPushButton#SettingsAutomationReloadBtn:pressed { background-color: #f38ba8; color: #11111b; }

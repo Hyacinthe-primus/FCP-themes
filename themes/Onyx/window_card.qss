@@ -1,0 +1,66 @@
+/* File Converter Pro - Quick Convert card (Onyx theme) */
+
+#card {
+    background: rgba(21, 23, 27, 0.95);
+    border-radius: 14px;
+    border: 1px solid #2c3138;
+}
+QLabel { color: rgba(232, 234, 237, 0.90); font-family: 'Segoe UI'; }
+#title    { font-size: 13px; font-weight: 700; color: #e8eaed; }
+#fileList { font-size: 11px; color: #8a929b; }
+#separator { background: #54565a; min-height: 1px; max-height: 1px; border: none; }
+QComboBox {
+    background: #26282c;
+    color: #e8eaed;
+    border: 1px solid #2c3138;
+    border-radius: 7px;
+    padding: 7px 10px; font-size: 12px; font-family: 'Segoe UI';
+    min-height: 16px;
+}
+QComboBox::drop-down { border: none; width: 20px; }
+QComboBox QAbstractItemView {
+    background: #15171b; color: #e8eaed;
+    selection-background-color: #2f9e6b; selection-color: #15171b;
+    border: 1px solid #2c3138; outline: none;
+}
+QComboBox QAbstractItemView::item { color: #e8eaed; padding: 4px 6px; }
+QComboBox QAbstractItemView::item:selected { background: #2f9e6b; color: #15171b; }
+QPushButton#convertBtn {
+    background: rgba(47, 158, 107, 0.18);
+    color: #2f9e6b;
+    border: 1px solid rgba(47, 158, 107, 0.35);
+    border-radius: 8px;
+    padding: 9px 0; font-weight: 700;
+    font-size: 12px; font-family: 'Segoe UI';
+}
+QPushButton#convertBtn:hover    { background: rgba(47, 158, 107, 0.28); }
+QPushButton#convertBtn:disabled {
+    background: rgba(232, 234, 237, 0.05);
+    color: rgba(232, 234, 237, 0.20);
+    border-color: rgba(232, 234, 237, 0.07);
+}
+QPushButton#cancelBtn {
+    background: rgba(232, 234, 237, 0.05);
+    color: rgba(232, 234, 237, 0.40);
+    border: 1px solid #2c3138;
+    border-radius: 8px;
+    padding: 9px 0; font-size: 12px; font-family: 'Segoe UI';
+}
+QPushButton#cancelBtn:hover {
+    background: rgba(232, 234, 237, 0.10);
+    color: rgba(232, 234, 237, 0.75);
+    border-color: rgba(232, 234, 237, 0.20);
+}
+QProgressBar {
+    background: rgba(232, 234, 237, 0.10);
+    border-radius: 3px;
+    min-height: 5px; max-height: 5px; border: none;
+}
+QProgressBar::chunk { background: rgba(47, 158, 107, 0.70); border-radius: 3px; }
+#statusOk  { font-size: 11px; color: rgb(32,200,170); font-family: 'Segoe UI'; }
+#statusErr { font-size: 11px; color: rgb(255,100,100); font-family: 'Segoe UI'; }
+#conversionLabel {
+    font-size: 12px; font-weight: 600;
+    color: #2f9e6b;
+    font-family: 'Segoe UI';
+}

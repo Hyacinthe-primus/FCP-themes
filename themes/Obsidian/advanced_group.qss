@@ -1,0 +1,45 @@
+/* Obsidian: checkable option cards */
+
+QGroupBox {
+    font-weight: bold;
+    font-size: 15px;
+    color: #4a4260;
+    background-color: #13111c;
+    border: 2px solid #5d4f93; border-top-color: #05040a; border-left-color: #05040a; border-radius: 0px;
+    margin-top: 16px;
+    padding-top: 16px;
+    margin-left: 2px;
+}
+QGroupBox:checked {
+    color: #ede9fe;
+    background-color: #0e0c14;
+    border: 2px solid #7c3aed; border-top-color: #ddd6fe; border-left-color: #ddd6fe; border-radius: 0px;
+}
+QGroupBox:unchecked:hover { background-color: #1a1726; }
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 28px;
+    padding: 0 8px;
+    color: #4a4260;
+}
+QGroupBox:checked::title { color: #a78bfa; }
+QGroupBox::indicator {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    margin-right: 6px;
+    border: 2px solid #5d4f93; border-top-color: #05040a; border-left-color: #05040a; background-color: #0e0c14; border-radius: 0px;
+}
+QGroupBox::indicator:unchecked:hover { border-color: #a78bfa; }
+QGroupBox::indicator:checked {
+    background-color: #7c3aed; border: 2px solid #ddd6fe; border-bottom-color: #05040a; border-right-color: #05040a;
+}
+
+QToolTip {
+    background-color: #09080e;
+    color: #ede9fe;
+    border: 1px solid #4c1d95;
+    border-radius: 4px;
+    padding: 7px 10px;
+    font-size: 12px;
+}

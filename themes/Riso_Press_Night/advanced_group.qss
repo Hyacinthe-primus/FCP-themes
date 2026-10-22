@@ -1,0 +1,64 @@
+/* Riso Press Night: checkable advanced option cards */
+
+QGroupBox {
+    font-weight: bold;
+    font-size: 16px;
+    color: #7f84a3;
+    background-color: #181b2a;
+    border: 1px dashed #7f84a3;
+    border-radius: 6px;
+    margin-top: 16px;
+    padding-top: 16px;
+    margin-left: 2px;
+}
+QGroupBox:checked {
+    color: #f3eee2;
+    background-color: #0d0f18;
+    border: 2px solid #f3eee2;
+    border-bottom: 5px solid #f3eee2;
+    border-right: 4px solid #f3eee2;
+}
+QGroupBox:unchecked:hover {
+    border: 1px solid #f3eee2;
+    background-color: #3b3523;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 30px;
+    padding: 0 10px;
+    color: #7f84a3;
+}
+QGroupBox:checked::title {
+    color: #f3eee2;
+}
+
+QGroupBox::indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    border: 2px solid #f3eee2;
+    background: #0d0f18;
+    margin-right: 6px;
+    margin-top: 3px;
+}
+QGroupBox::indicator:unchecked:hover {
+    background: #ffd23f; color: #14162a;
+}
+QGroupBox::indicator:checked {
+    border: 2px solid #f3eee2;
+    background: qradialgradient(cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+        stop:0 #ff5c8a, stop:0.5 #ff5c8a, stop:0.55 #0d0f18, stop:1 #0d0f18);
+}
+QGroupBox::indicator:checked:hover {
+    background: qradialgradient(cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+        stop:0 #ff7aa0, stop:0.5 #ff7aa0, stop:0.55 #ffd23f, stop:1 #ffd23f);
+}
+
+QToolTip {
+    background-color: #0c0e15;
+    color: #f3eee2;
+    border: 1px solid #f3eee2;
+    border-radius: 4px;
+    padding: 7px 10px;
+    font-size: 12px;
+}

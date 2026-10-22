@@ -1,0 +1,14 @@
+/* Catppuccin Mocha: language list scroll area */
+
+QScrollArea { background: #181825; border: none; }
+
+QScrollBar:vertical { background: transparent; width: 10px; margin: 2px; border: none; }
+QScrollBar::handle:vertical { background: #45475a; border-radius: 4px; min-height: 30px; }
+QScrollBar::handle:vertical:hover { background: #cba6f7; }
+QScrollBar:horizontal { background: transparent; height: 10px; margin: 2px; border: none; }
+QScrollBar::handle:horizontal { background: #45475a; border-radius: 4px; min-width: 30px; }
+QScrollBar::handle:horizontal:hover { background: #cba6f7; }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal { width: 0; }
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical,
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal { background: transparent; }

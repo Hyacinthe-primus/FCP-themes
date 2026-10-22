@@ -1,0 +1,29 @@
+body {
+    color: #b9b5a8;
+    background-color: #12141f;
+    font-size: 9px;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #8aa2ff;
+    text-decoration: underline;
+    font-weight: 600;
+}
+a:hover {
+    color: #ff7aa0;
+}
+ul {
+    margin: 2px 0;
+    padding-left: 15px;
+}
+li { margin: 1px 0; }
+p  { margin: 2px 0; line-height: 1.4; }
+strong {
+    color: #f3eee2;
+    font-weight: 700;
+}
+.warning {
+    color: #ff7aa0 !important;
+    font-weight: 700;
+}

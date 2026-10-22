@@ -1,0 +1,45 @@
+/* Alabaster: checkable option cards */
+
+QGroupBox {
+    font-weight: bold;
+    font-size: 15px;
+    color: #8f7e5c;
+    background-color: #ffffff;
+    border: none; border-top: 2px solid #b8641f; border-bottom: 1px solid #ddd0b8;
+    margin-top: 16px;
+    padding-top: 16px;
+    margin-left: 2px;
+}
+QGroupBox:checked {
+    color: #2c2616;
+    background-color: #f7f3ec;
+    border: none; border-top: 3px solid #b8641f; border-bottom: 2px solid #b8641f;
+}
+QGroupBox:unchecked:hover { background-color: #fffdf8; }
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 28px;
+    padding: 0 8px;
+    color: #8f7e5c;
+}
+QGroupBox:checked::title { color: #b8641f; }
+QGroupBox::indicator {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    margin-right: 6px;
+    border: 1px solid #8f7e5c; border-radius: 2px; background: #ffffff;
+}
+QGroupBox::indicator:unchecked:hover { border-color: #b8641f; }
+QGroupBox::indicator:checked {
+    border: 1px solid #7a3f12; border-radius: 2px; background: #b8641f;
+}
+
+QToolTip {
+    background-color: #2c2616;
+    color: #f7f3ec;
+    border: 1px solid #2c2616;
+    border-radius: 4px;
+    padding: 7px 10px;
+    font-size: 12px;
+}
