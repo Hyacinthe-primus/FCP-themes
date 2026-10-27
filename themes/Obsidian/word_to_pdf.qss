@@ -1,0 +1,55 @@
+/* Obsidian: Word → PDF preview */
+
+QTextEdit {
+    background-color: #0e0c14;
+    color: #ede9fe;
+    border: 2px solid #5d4f93;
+    border-top-color: #05040a;
+    border-left-color: #05040a;
+    border-radius: 0px;
+    padding: 8px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 12px;
+}
+QTextEdit:focus {
+    background-color: #13111c;
+    border-color: #a78bfa;
+}
+
+QScrollBar:vertical {
+    background: #0e0c14;
+    width: 12px;
+    margin: 0;
+    border: none;
+}
+QScrollBar::handle:vertical {
+    background: #2d2940;
+    border: 2px solid #05040a;
+    border-top-color: #5d4f93;
+    border-left-color: #5d4f93;
+    min-height: 24px;
+}
+QScrollBar::handle:vertical:hover { background: #7c3aed; }
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical { height: 0; }
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical { background: none; }
+
+QScrollBar:horizontal {
+    background: #0e0c14;
+    height: 12px;
+    margin: 0;
+    border: none;
+}
+QScrollBar::handle:horizontal {
+    background: #2d2940;
+    border: 2px solid #05040a;
+    border-top-color: #5d4f93;
+    border-left-color: #5d4f93;
+    min-width: 24px;
+}
+QScrollBar::handle:horizontal:hover { background: #7c3aed; }
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal { width: 0; }
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal { background: none; }

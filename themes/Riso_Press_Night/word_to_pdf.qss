@@ -1,0 +1,57 @@
+/* Riso Press Night: Word → PDF preview */
+
+QTextEdit {
+    background-color: #0d0f18;
+    color: #f3eee2;
+    border: 1px solid #7f84a3;
+    border-bottom: 2px solid #f3eee2;
+    border-radius: 2px;
+    padding: 8px 10px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 12px;
+}
+QTextEdit:focus {
+    background-color: #1a1d30;
+    border-color: #3d63ff;
+    border-bottom: 3px solid #3d63ff;
+}
+
+QScrollBar:vertical {
+    background: #181b2a;
+    width: 12px;
+    margin: 0;
+    border: none;
+    border-left: 1px solid #2a2f4a;
+}
+QScrollBar::handle:vertical {
+    background: #b9b5a8;
+    border: 2px solid #181b2a;
+    border-radius: 3px;
+    min-height: 24px;
+}
+QScrollBar::handle:vertical:hover { background: #3d63ff; }
+QScrollBar::handle:vertical:pressed { background: #ff5c8a; }
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical { height: 0; }
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical { background: none; }
+
+QScrollBar:horizontal {
+    background: #181b2a;
+    height: 12px;
+    margin: 0;
+    border: none;
+    border-top: 1px solid #2a2f4a;
+}
+QScrollBar::handle:horizontal {
+    background: #b9b5a8;
+    border: 2px solid #181b2a;
+    border-radius: 3px;
+    min-width: 24px;
+}
+QScrollBar::handle:horizontal:hover { background: #3d63ff; }
+QScrollBar::handle:horizontal:pressed { background: #ff5c8a; }
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal { width: 0; }
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal { background: none; }

@@ -1,0 +1,48 @@
+/* Opaline: Word → PDF preview */
+
+QTextEdit {
+    background-color: #ffffff;
+    color: #241f33;
+    border: 1px solid rgba(120,92,168,0.34);
+    border-radius: 12px;
+    padding: 8px 12px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 12px;
+}
+QTextEdit:focus {
+    border-color: #7c3aed;
+}
+
+QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+    margin: 2px;
+    border: none;
+}
+QScrollBar::handle:vertical {
+    background: #d6c8ec;
+    border-radius: 4px;
+    min-height: 24px;
+}
+QScrollBar::handle:vertical:hover { background: #7c3aed; }
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical { height: 0; }
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical { background: none; }
+
+QScrollBar:horizontal {
+    background: transparent;
+    height: 10px;
+    margin: 2px;
+    border: none;
+}
+QScrollBar::handle:horizontal {
+    background: #d6c8ec;
+    border-radius: 4px;
+    min-width: 24px;
+}
+QScrollBar::handle:horizontal:hover { background: #7c3aed; }
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal { width: 0; }
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal { background: none; }

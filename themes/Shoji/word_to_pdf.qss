@@ -1,0 +1,50 @@
+/* Shoji: Word → PDF preview */
+
+QTextEdit {
+    background-color: #fffdf6;
+    color: #211b14;
+    border: 1px solid rgba(139,105,50,0.30);
+    border-bottom: 1px solid #a8801f;
+    border-radius: 0px;
+    padding: 8px;
+    font-family: 'Yu Mincho', 'Hiragino Mincho ProN', 'Georgia', serif;
+    font-size: 12px;
+}
+QTextEdit:focus {
+    background-color: #ebe3d0;
+    border-bottom: 2px solid #c8321e;
+}
+
+QScrollBar:vertical {
+    background: #f3eddf;
+    width: 9px;
+    margin: 0;
+    border: none;
+}
+QScrollBar::handle:vertical {
+    background: #6f5214;
+    border-radius: 0px;
+    min-height: 24px;
+}
+QScrollBar::handle:vertical:hover { background: #a8801f; }
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical { height: 0; }
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical { background: none; }
+
+QScrollBar:horizontal {
+    background: #f3eddf;
+    height: 9px;
+    margin: 0;
+    border: none;
+}
+QScrollBar::handle:horizontal {
+    background: #6f5214;
+    border-radius: 0px;
+    min-width: 24px;
+}
+QScrollBar::handle:horizontal:hover { background: #a8801f; }
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal { width: 0; }
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal { background: none; }

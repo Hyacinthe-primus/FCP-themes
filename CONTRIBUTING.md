@@ -69,14 +69,15 @@ Each file styles one part of the app. These eleven are required. The app rejects
 | `terms.qss` | The Terms of Use and Privacy dialogs. |
 | `terms_html.css` | The HTML content inside those dialogs (real CSS). |
 
-Two more files are optional. If you remove them, the app falls back to its own dark or light stylesheet matching your `kind`:
+Three more files are optional. If you remove them, the app falls back to its own dark or light stylesheet matching your `kind`:
 
 | File | What it styles |
 | --- | --- |
 | `splash.qss` | The startup splash screen. |
 | `window_card.qss` | The Quick Convert window opened from the Windows context menu. |
+| `word_to_pdf.qss` | The Word to PDF options dialog preview (the text area and its scrollbars). |
 
-Both need specific selectors, listed in the template README. Keep them as they are unless you restyle those rules too, and check the splash and the Quick Convert window in the app.
+They need specific selectors, listed in the template README. Keep them as they are unless you restyle those rules too, and check the splash, the Quick Convert window and the Word to PDF preview in the app.
 
 Things worth knowing:
 

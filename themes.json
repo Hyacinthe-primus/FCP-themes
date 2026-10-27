@@ -9,6 +9,7 @@
         "widgets": [
             "advanced_conversions.qss",
             "advanced_group.qss",
+            "buttons.qss",
             "contact_links.css",
             "dashboard.qss",
             "lang_scroll.qss",
@@ -19,7 +20,8 @@
             "templates.qss",
             "terms.qss",
             "terms_html.css",
-            "window_card.qss"
+            "window_card.qss",
+            "word_to_pdf.qss"
         ]
     },
     "3f01befd-2d48-5783-a361-7a88697e15a3": {
@@ -32,6 +34,7 @@
         "widgets": [
             "advanced_conversions.qss",
             "advanced_group.qss",
+            "buttons.qss",
             "contact_links.css",
             "dashboard.qss",
             "lang_scroll.qss",
@@ -42,7 +45,8 @@
             "templates.qss",
             "terms.qss",
             "terms_html.css",
-            "window_card.qss"
+            "window_card.qss",
+            "word_to_pdf.qss"
         ]
     },
     "c4f39405-c1ff-5c3b-a3bf-ea1a1b204950": {
@@ -55,6 +59,7 @@
         "widgets": [
             "advanced_conversions.qss",
             "advanced_group.qss",
+            "buttons.qss",
             "contact_links.css",
             "dashboard.qss",
             "lang_scroll.qss",
@@ -65,7 +70,8 @@
             "templates.qss",
             "terms.qss",
             "terms_html.css",
-            "window_card.qss"
+            "window_card.qss",
+            "word_to_pdf.qss"
         ]
     },
     "95dd3482-e48a-5dff-a310-fff13a3b6a13": {
@@ -78,6 +84,7 @@
         "widgets": [
             "advanced_conversions.qss",
             "advanced_group.qss",
+            "buttons.qss",
             "contact_links.css",
             "dashboard.qss",
             "lang_scroll.qss",
@@ -88,7 +95,8 @@
             "templates.qss",
             "terms.qss",
             "terms_html.css",
-            "window_card.qss"
+            "window_card.qss",
+            "word_to_pdf.qss"
         ]
     },
     "5d256fae-22f1-5633-af82-f0fa1d7dc8f6": {
@@ -101,6 +109,7 @@
         "widgets": [
             "advanced_conversions.qss",
             "advanced_group.qss",
+            "buttons.qss",
             "contact_links.css",
             "dashboard.qss",
             "lang_scroll.qss",
@@ -111,7 +120,8 @@
             "templates.qss",
             "terms.qss",
             "terms_html.css",
-            "window_card.qss"
+            "window_card.qss",
+            "word_to_pdf.qss"
         ]
     },
     "e08da3d8-118d-5165-a817-41ed68cc33dd": {
@@ -124,6 +134,7 @@
         "widgets": [
             "advanced_conversions.qss",
             "advanced_group.qss",
+            "buttons.qss",
             "contact_links.css",
             "dashboard.qss",
             "lang_scroll.qss",
@@ -134,7 +145,8 @@
             "templates.qss",
             "terms.qss",
             "terms_html.css",
-            "window_card.qss"
+            "window_card.qss",
+            "word_to_pdf.qss"
         ]
     },
     "74e93e8c-b842-5aba-bede-af2c0fd37e37": {
@@ -147,6 +159,7 @@
         "widgets": [
             "advanced_conversions.qss",
             "advanced_group.qss",
+            "buttons.qss",
             "contact_links.css",
             "dashboard.qss",
             "lang_scroll.qss",
@@ -157,7 +170,8 @@
             "templates.qss",
             "terms.qss",
             "terms_html.css",
-            "window_card.qss"
+            "window_card.qss",
+            "word_to_pdf.qss"
         ]
     },
     "a7bf868c-aabe-567a-838e-90f148857288": {
@@ -170,6 +184,7 @@
         "widgets": [
             "advanced_conversions.qss",
             "advanced_group.qss",
+            "buttons.qss",
             "contact_links.css",
             "dashboard.qss",
             "lang_scroll.qss",
@@ -180,7 +195,8 @@
             "templates.qss",
             "terms.qss",
             "terms_html.css",
-            "window_card.qss"
+            "window_card.qss",
+            "word_to_pdf.qss"
         ]
     },
     "485a6ce5-292b-59d8-a06a-59db6a498176": {
@@ -193,6 +209,7 @@
         "widgets": [
             "advanced_conversions.qss",
             "advanced_group.qss",
+            "buttons.qss",
             "contact_links.css",
             "dashboard.qss",
             "lang_scroll.qss",
@@ -203,7 +220,8 @@
             "templates.qss",
             "terms.qss",
             "terms_html.css",
-            "window_card.qss"
+            "window_card.qss",
+            "word_to_pdf.qss"
         ]
     },
     "57220880-959c-527e-a074-9e8d5b379049": {
@@ -216,6 +234,7 @@
         "widgets": [
             "advanced_conversions.qss",
             "advanced_group.qss",
+            "buttons.qss",
             "contact_links.css",
             "dashboard.qss",
             "lang_scroll.qss",
@@ -226,7 +245,8 @@
             "templates.qss",
             "terms.qss",
             "terms_html.css",
-            "window_card.qss"
+            "window_card.qss",
+            "word_to_pdf.qss"
         ]
     },
     "5716f6bc-d838-52f0-a92c-0a80083044b2": {
@@ -239,6 +259,7 @@
         "widgets": [
             "advanced_conversions.qss",
             "advanced_group.qss",
+            "buttons.qss",
             "contact_links.css",
             "dashboard.qss",
             "lang_scroll.qss",
@@ -249,7 +270,8 @@
             "templates.qss",
             "terms.qss",
             "terms_html.css",
-            "window_card.qss"
+            "window_card.qss",
+            "word_to_pdf.qss"
         ]
     },
     "7bce135e-c716-5095-8e9f-8b014424bcd1": {
@@ -262,6 +284,7 @@
         "widgets": [
             "advanced_conversions.qss",
             "advanced_group.qss",
+            "buttons.qss",
             "contact_links.css",
             "dashboard.qss",
             "lang_scroll.qss",
@@ -272,7 +295,8 @@
             "templates.qss",
             "terms.qss",
             "terms_html.css",
-            "window_card.qss"
+            "window_card.qss",
+            "word_to_pdf.qss"
         ]
     }
 }

@@ -65,13 +65,14 @@ A `.fctheme` import is rejected if any of these files is missing:
 
 ## Optional files
 
-These two are used automatically when present. If you delete them, the app
+These three are used automatically when present. If you delete them, the app
 falls back to the dark/light stylesheet that matches `kind`.
 
 | File | What it styles |
 |------|----------------|
 | `splash.qss` | Startup splash screen |
 | `window_card.qss` | Quick Convert window opened from the Windows context menu |
+| `word_to_pdf.qss` | Word to PDF options dialog preview |
 
 `splash.qss` must style `QFrame#SplashContainer`, `QLabel#SplashLogo`,
 `QLabel#SplashTitle`, `QLabel#SplashSubtitle`, `QProgressBar#SplashProgress`,
@@ -81,6 +82,10 @@ falls back to the dark/light stylesheet that matches `kind`.
 `QComboBox`, `QComboBox QAbstractItemView` (including a readable
 `selection-color`), `QPushButton#convertBtn`, `QPushButton#cancelBtn`,
 `QProgressBar`, `#statusOk`, `#statusErr`, and `#conversionLabel`.
+
+`word_to_pdf.qss` must style `QTextEdit` and its vertical and horizontal
+`QScrollBar` parts (`:vertical`, `::handle:vertical`, `:horizontal`,
+`::handle:horizontal`). Keep the preview text readable against the background.
 
 ---
 
