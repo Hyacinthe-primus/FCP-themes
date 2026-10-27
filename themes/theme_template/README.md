@@ -65,7 +65,7 @@ A `.fctheme` import is rejected if any of these files is missing:
 
 ## Optional files
 
-These three are used automatically when present. If you delete them, the app
+These four are used automatically when present. If you delete them, the app
 falls back to the dark/light stylesheet that matches `kind`.
 
 | File | What it styles |
@@ -73,6 +73,7 @@ falls back to the dark/light stylesheet that matches `kind`.
 | `splash.qss` | Startup splash screen |
 | `window_card.qss` | Quick Convert window opened from the Windows context menu |
 | `word_to_pdf.qss` | Word to PDF options dialog preview |
+| `buttons.qss` | Shared dialog action buttons |
 
 `splash.qss` must style `QFrame#SplashContainer`, `QLabel#SplashLogo`,
 `QLabel#SplashTitle`, `QLabel#SplashSubtitle`, `QProgressBar#SplashProgress`,
@@ -86,6 +87,15 @@ falls back to the dark/light stylesheet that matches `kind`.
 `word_to_pdf.qss` must style `QTextEdit` and its vertical and horizontal
 `QScrollBar` parts (`:vertical`, `::handle:vertical`, `:horizontal`,
 `::handle:horizontal`). Keep the preview text readable against the background.
+
+`buttons.qss` must style the shared action buttons, including their hover,
+pressed and disabled states: `QPushButton#BtnOK`, `QPushButton#BtnCancel`,
+`QPushButton#BtnDecline`, `QPushButton#BtnIndigo`, `QPushButton#BtnGhost`,
+`QPushButton#BtnClose`, `QPushButton#BtnCancelGlassy`,
+`QPushButton#BtnReconvert`, `QPushButton#BtnPrintPdf`,
+`QPushButton#BtnExportJson`, `QPushButton#BtnDeleteSelection`,
+`QPushButton#BtnClearAll`, `QPushButton#BtnHistoryClose`,
+`QPushButton#BtnFolderAsItem`, and `QPushButton#BtnFolderContent`.
 
 ---
 
