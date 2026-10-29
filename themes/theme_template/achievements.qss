@@ -1,0 +1,423 @@
+AchievementsPalette {
+    background: #f6f8fa;
+    surface: #FFFFFF;
+    surface_alt: #eef1f4;
+    input: #ffffff;
+    border: #d0d7de;
+    border_light: #b8c1cc;
+    text: #1f2328;
+    text_secondary: #57606a;
+    muted: #8c959f;
+    gold: #0969da;
+    gold_bright: #0969da;
+    gold_dim: #0a4a8a;
+    green: #10b981;
+    red: #b91c1c;
+    red_dim: #ffebe9;
+    blue: #0969da;
+    purple: #8250df;
+    secret_bg: #fff0f0;
+    secret_text: #b91c1c;
+    progress_text: #ffffff;
+    font_family: 'Segoe UI';
+    ring_track: #d0d7de;
+    ring_progress: #0969da;
+    ring_glow: #0969da;
+    ring_tip: #0969da;
+    ring_complete: #0969da;
+    progress_track: #eef1f4;
+    progress_fill: #0a4a8a;
+    progress_fill_end: #0969da;
+    stat_track: #eef1f4;
+    card_sheen: #FFFFFF;
+    card_shadow: #000000;
+    rank_rookie: #607D8B;
+    rank_initiate: #0288D1;
+    rank_adept: #10b981;
+    rank_veteran: #E65100;
+    rank_elite: #C2185B;
+    rank_champion: #8250df;
+    rank_master: #D84315;
+    rank_grand_master: #5D4037;
+    rank_legendary: #0969da;
+    rank_mythic: #C62828;
+}
+
+QDialog#AchievementsDialog {
+    background-color: #f6f8fa;
+    color: #1f2328;
+    font-family: 'Segoe UI';
+}
+
+QLabel {
+    background: transparent;
+    font-family: 'Segoe UI';
+}
+
+QFrame#AchievementsHeader {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #FFFFFF, stop:0.5 #eef1f4, stop:1 #FFFFFF);
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+}
+
+QLabel#AchievementsHeaderTitle {
+    color: #0969da;
+    font-size: 20px;
+    font-weight: 700;
+    background: transparent;
+}
+
+QLabel#AchievementsHeaderChip {
+    color: #57606a;
+    background: transparent;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 12px;
+}
+
+QLabel#AchievementsHeaderChip[chipType="progress"] {
+    color: #10b981;
+    border-color: #10b981;
+}
+
+QLabel#AchievementsHeaderChip[chipType="xp"] {
+    color: #0969da;
+    border-color: #0969da;
+}
+
+QPushButton#AchievementsNavPill {
+    background: #eef1f4;
+    color: #57606a;
+    border: 1px solid #d0d7de;
+    border-radius: 17px;
+    font-size: 11px;
+    padding: 0 18px;
+}
+
+QPushButton#AchievementsNavPill:hover {
+    background: #ffffff;
+    color: #1f2328;
+    border-color: #b8c1cc;
+}
+
+QPushButton#AchievementsNavPill:checked {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #bfdbfe, stop:1 #93c5fd);
+    color: #0a3069;
+    border: 1px solid #0969da;
+    font-weight: 700;
+}
+
+QLabel#AchievementsUnlockedCount {
+    color: #1f2328;
+    font-size: 22px;
+    font-weight: 700;
+    background: transparent;
+}
+
+QLabel#AchievementsUnlockedCaption {
+    color: #57606a;
+    font-size: 14px;
+    background: transparent;
+}
+
+QLabel#AchievementsRankLabel {
+    color: #57606a;
+    font-size: 11px;
+    background: transparent;
+}
+
+QTreeWidget#AchievementsCategoryTree {
+    background: #FFFFFF;
+    color: #1f2328;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    alternate-background-color: #eef1f4;
+    outline: none;
+    font-size: 11px;
+}
+
+QTreeWidget#AchievementsCategoryTree::item {
+    padding: 5px 4px;
+}
+
+QTreeWidget#AchievementsCategoryTree::item:hover {
+    background: #eef4ff;
+    color: #0a3069;
+}
+
+QTreeWidget#AchievementsCategoryTree::item:selected {
+    background: #bfdbfe;
+    color: #0a3069;
+}
+
+QTreeWidget#AchievementsCategoryTree QHeaderView::section {
+    background: #eef1f4;
+    color: #57606a;
+    border: none;
+    border-bottom: 1px solid #d0d7de;
+    padding: 6px 8px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+QFrame#AchievementsFilterBar {
+    background: #FFFFFF;
+    border: 1px solid #d0d7de;
+    border-radius: 7px;
+}
+
+QComboBox#AchievementsFilter {
+    background: #ffffff;
+    color: #1f2328;
+    border: 1px solid #d0d7de;
+    border-radius: 7px;
+    padding: 5px 10px;
+    font-size: 11px;
+    min-width: 110px;
+}
+
+QComboBox#AchievementsFilter:hover {
+    border-color: #b8c1cc;
+}
+
+QComboBox#AchievementsFilter:focus {
+    border-color: #0969da;
+}
+
+QComboBox#AchievementsFilter::drop-down {
+    border: none;
+    width: 20px;
+}
+
+QComboBox#AchievementsFilter::down-arrow {
+    image: none;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #57606a;
+    margin-right: 8px;
+}
+
+QComboBox#AchievementsFilter QAbstractItemView {
+    background: #eef1f4;
+    color: #1f2328;
+    border: 1px solid #d0d7de;
+    selection-background-color: #bfdbfe;
+    selection-color: #0a3069;
+}
+
+QLineEdit#AchievementsSearch {
+    background: #ffffff;
+    color: #1f2328;
+    border: 1px solid #d0d7de;
+    border-radius: 7px;
+    padding: 6px 10px;
+    font-size: 11px;
+    placeholder-text-color: #8c959f;
+}
+
+QLineEdit#AchievementsSearch:focus {
+    border-color: #0969da;
+}
+
+QPushButton#AchievementsSecretsButton {
+    background: #ffffff;
+    color: #57606a;
+    border: 1px solid #d0d7de;
+    border-radius: 14px;
+    font-size: 10px;
+    padding: 0 12px;
+}
+
+QPushButton#AchievementsSecretsButton:hover:!checked {
+    border-color: #b8c1cc;
+    color: #1f2328;
+}
+
+QPushButton#AchievementsSecretsButton:checked {
+    background: #ffebe9;
+    color: #b91c1c;
+    border-color: #b91c1c;
+}
+
+QScrollArea#AchievementsScroll,
+QStackedWidget#AchievementsStack,
+QWidget#AchievementsCardsContainer,
+QWidget#AchievementsGlobalBar {
+    background: transparent;
+    border: none;
+}
+
+QLabel#AchievementsSkeleton {
+    color: #8c959f;
+    font-size: 14px;
+    padding: 40px;
+    background: transparent;
+}
+
+QGroupBox#AchievementsGroup {
+    background: transparent;
+    color: #57606a;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+QGroupBox#AchievementsGroup::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 12px;
+    top: -2px;
+    padding: 0 6px;
+    background: #f6f8fa;
+    color: #57606a;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+QPushButton#AchievementsCloseButton {
+    background: #ffebe9;
+    color: #b91c1c;
+    border: 1px solid #b91c1c;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+QPushButton#AchievementsCloseButton:hover {
+    background: #b91c1c;
+    color: #FFFFFF;
+}
+
+QScrollBar:vertical {
+    background: #FFFFFF;
+    width: 6px;
+    border-radius: 3px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #b8c1cc;
+    border-radius: 3px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #8c959f;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+QScrollBar:horizontal {
+    background: #FFFFFF;
+    height: 6px;
+    border-radius: 3px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #b8c1cc;
+    border-radius: 3px;
+    min-width: 30px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #8c959f;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0;
+}
+
+QDialog#AchievementPopup,
+QDialog#RankPopup {
+    background: transparent;
+}
+
+QFrame#AchievementPopupContainer {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #FFFFFF, stop:0.3 #eef1f4, stop:1 #FFFFFF);
+    border: 3px solid #0969da;
+    border-radius: 15px;
+    font-family: 'Segoe UI';
+}
+
+QFrame#RankPopupContainer {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #FFFFFF, stop:0.3 #eef1f4, stop:1 #FFFFFF);
+    border: 3px solid #0969da;
+    border-radius: 15px;
+    font-family: 'Segoe UI';
+}
+
+QLabel#AchievementPopupIcon,
+QLabel#RankPopupIcon {
+    background: transparent;
+    font-size: 48px;
+}
+
+QLabel#AchievementPopupTitle {
+    color: #0969da;
+    font-size: 14px;
+    font-weight: 700;
+    background: transparent;
+}
+
+QLabel#AchievementPopupName {
+    color: #1f2328;
+    font-size: 16px;
+    font-weight: 700;
+    background: transparent;
+}
+
+QLabel#AchievementPopupDesc {
+    color: #57606a;
+    font-size: 12px;
+    background: transparent;
+}
+
+QLabel#AchievementPopupXP,
+QLabel#RankPopupXP {
+    color: #0969da;
+    background: transparent;
+    border: 1px solid #0969da;
+    border-radius: 10px;
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+QLabel#RankPopupRankUp {
+    color: #0969da;
+    background: transparent;
+    border: 1px solid #0969da;
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+QLabel#RankPopupTitle {
+    color: #0969da;
+    font-size: 14px;
+    font-weight: 700;
+    background: transparent;
+}
+
+QLabel#RankPopupName {
+    color: #0969da;
+    font-size: 16px;
+    font-weight: 700;
+    background: transparent;
+}

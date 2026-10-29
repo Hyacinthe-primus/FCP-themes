@@ -45,6 +45,42 @@ quickly, then adjust individual rules.
 
 ---
 
+## Dashboard palette overrides
+
+`metadata.ini` can include an optional `[dashboard]` section to give the
+statistics dashboard explicit colors instead of deriving them from
+`dashboard.qss`:
+
+```ini
+[dashboard]
+background = #f0f2f7
+surface = #ffffff
+surface_alt = #f7faff
+border = #dde3ec
+text = #1a202c
+muted = #4a5568
+accent = #2b6cb0
+accent_text = #2b6cb0
+```
+
+| Key | Used for |
+|-----|----------|
+| `background` | Dashboard window background |
+| `surface` | Cards, tables, chart and filter panels |
+| `surface_alt` | Stat-card tracks, section headers, alternate rows |
+| `border` | Card, table and panel borders |
+| `text` | Primary chart and table text |
+| `muted` | Secondary labels, ticks and hints |
+| `accent` | Chart bars, donut segments, progress and highlights |
+| `accent_text` | Accent-colored text on surfaces (stat values, section titles) |
+
+`accent_text` is separate so a bright accent such as yellow can stay on bars
+while readable dark gold or navy is used for text. If the section is omitted,
+the app derives the palette from the theme's `dashboard.qss` instead. Missing
+or invalid keys fall back to the derived value.
+
+---
+
 ## Required files
 
 A `.fctheme` import is rejected if any of these files is missing:
@@ -65,7 +101,7 @@ A `.fctheme` import is rejected if any of these files is missing:
 
 ## Optional files
 
-These four are used automatically when present. If you delete them, the app
+These five are used automatically when present. If you delete them, the app
 falls back to the dark/light stylesheet that matches `kind`.
 
 | File | What it styles |
@@ -74,6 +110,7 @@ falls back to the dark/light stylesheet that matches `kind`.
 | `window_card.qss` | Quick Convert window opened from the Windows context menu |
 | `word_to_pdf.qss` | Word to PDF options dialog preview |
 | `buttons.qss` | Shared dialog action buttons |
+| `achievements.qss` | Achievements dialog, cards, progress widgets and unlock popups |
 
 `splash.qss` must style `QFrame#SplashContainer`, `QLabel#SplashLogo`,
 `QLabel#SplashTitle`, `QLabel#SplashSubtitle`, `QProgressBar#SplashProgress`,
@@ -96,6 +133,30 @@ pressed and disabled states: `QPushButton#BtnOK`, `QPushButton#BtnCancel`,
 `QPushButton#BtnExportJson`, `QPushButton#BtnDeleteSelection`,
 `QPushButton#BtnClearAll`, `QPushButton#BtnHistoryClose`,
 `QPushButton#BtnFolderAsItem`, and `QPushButton#BtnFolderContent`.
+
+`achievements.qss` starts with an `AchievementsPalette { ... }` block. The app
+reads that block for the custom-painted XP ring, achievement cards, rank badge
+and stat bars; the rest of the file styles the dialog and popups. Keep the
+palette keys and update them with the theme colors. The main selectors are
+`QDialog#AchievementsDialog`, `QFrame#AchievementsHeader`,
+`QLabel#AchievementsHeaderTitle`, `QLabel#AchievementsHeaderChip`,
+`QPushButton#AchievementsNavPill`, `QTreeWidget#AchievementsCategoryTree`,
+`QFrame#AchievementsFilterBar`, `QComboBox#AchievementsFilter`,
+`QLineEdit#AchievementsSearch`, `QPushButton#AchievementsSecretsButton`,
+`QGroupBox#AchievementsGroup`, `QPushButton#AchievementsCloseButton`,
+`QFrame#AchievementPopupContainer`, `QFrame#RankPopupContainer`, and the
+`AchievementPopup*` / `RankPopup*` labels. See the template file for the full
+list and the palette keys.
+
+The palette block also controls the painted details: `font_family`,
+`ring_track`, `ring_progress`, `ring_glow`, `ring_tip`, `ring_complete`,
+`progress_track`, `progress_fill`, `progress_fill_end`, `stat_track`,
+`card_sheen`, `card_shadow`, `tier_<id>`, `tier_<id>_glow`,
+`tier_<id>_hover`, `category_<id>`, and `rank_<id>`. Rank ids are `rookie`,
+`initiate`, `adept`, `veteran`, `elite`, `champion`, `master`,
+`grand_master`, `legendary`, and `mythic`. The file is loaded when the
+achievements dialog opens, so editing it and reopening the dialog is enough;
+no app rebuild is needed.
 
 ---
 

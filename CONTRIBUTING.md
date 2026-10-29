@@ -51,6 +51,12 @@ preview = preview.png
 
 `name`, `description` and `author` are copied as they are into `themes.json`, so check the spelling.
 
+The optional `[dashboard]` section controls the statistics dashboard colors.
+Leave it out to derive them from `dashboard.qss`, or copy the section from the
+template README to set `background`, `surface`, `surface_alt`, `border`, `text`,
+`muted`, `accent` and `accent_text` explicitly. Use `accent_text` for
+accent-colored text on surfaces when the main accent is too bright to read.
+
 ## 3. Restyle the files
 
 Each file styles one part of the app. These eleven are required. The app rejects an import if one is missing, and so do the checks here. Never rename them.
@@ -69,7 +75,7 @@ Each file styles one part of the app. These eleven are required. The app rejects
 | `terms.qss` | The Terms of Use and Privacy dialogs. |
 | `terms_html.css` | The HTML content inside those dialogs (real CSS). |
 
-Four more files are optional. If you remove them, the app falls back to its own dark or light stylesheet matching your `kind`:
+Five more files are optional. If you remove them, the app falls back to its own dark or light stylesheet matching your `kind`:
 
 | File | What it styles |
 | --- | --- |
@@ -77,8 +83,9 @@ Four more files are optional. If you remove them, the app falls back to its own 
 | `window_card.qss` | The Quick Convert window opened from the Windows context menu. |
 | `word_to_pdf.qss` | The Word to PDF options dialog preview (the text area and its scrollbars). |
 | `buttons.qss` | The shared dialog action buttons (OK, Cancel, Decline, and the other action buttons). |
+| `achievements.qss` | The achievements dialog, custom-painted cards and progress widgets, and the unlock/rank popups. |
 
-They need specific selectors, listed in the template README. Keep them as they are unless you restyle those rules too, and check the splash, the Quick Convert window, the Word to PDF preview and the dialog buttons in the app.
+They need specific selectors, listed in the template README. Keep them as they are unless you restyle those rules too, and check the splash, the Quick Convert window, the Word to PDF preview, the dialog buttons and the achievements screens in the app. `achievements.qss` also needs its `AchievementsPalette` block so the XP ring, cards, rank badge and stat bars match the rest of the theme. Besides the core colors, the block accepts `font_family`, `ring_*`, `progress_*`, `stat_track`, `card_sheen`, `card_shadow`, `tier_<id>`, `category_<id>` and `rank_<id>` keys.
 
 Things worth knowing:
 
