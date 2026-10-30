@@ -42,18 +42,18 @@ AchievementsPalette {
     rank_legendary: #78631e;
     rank_mythic: #f09939;
 
-    category_progression: #78631e;
-    category_conversion: #ffd23f;
-    category_pdf_tools: #f09939;
-    category_compression: #b6b43a;
-    category_security: #ffc444;
-    category_technical: #d19362;
-    category_usage: #aeb272;
-    category_completion: #b1cf5e;
-    category_ultimate: #bd7870;
-    category_fun: #e98037;
-    category_advanced_conversions: #ffd23f;
-    category_templates: #dea558;
+    category_progression: #77621e;
+    category_conversion: #75611d;
+    category_pdf_tools: #8b5921;
+    category_compression: #686721;
+    category_security: #7d6021;
+    category_technical: #825b3d;
+    category_usage: #656742;
+    category_completion: #5a6a30;
+    category_ultimate: #885651;
+    category_fun: #975324;
+    category_advanced_conversions: #75611d;
+    category_templates: #7f5e32;
 }
 
 QDialog#AchievementsDialog {
@@ -158,13 +158,13 @@ QTreeWidget#AchievementsCategoryTree::item {
 }
 
 QTreeWidget#AchievementsCategoryTree::item:hover {
-    background: #fcd554;
-    color: #78631e;
+    background: #ede2c3;
+    color: #1c2340;
 }
 
 QTreeWidget#AchievementsCategoryTree::item:selected {
-    background: #f3dd9a;
-    color: #f3eee2;
+    background: #efe1b8;
+    color: #1c2340;
 }
 
 QTreeWidget#AchievementsCategoryTree QHeaderView::section {

@@ -51,7 +51,7 @@ AchievementsPalette {
     category_usage: #a3a6fa;
     category_completion: #8fb2d5;
     category_ultimate: #c499fb;
-    category_fun: #e27ca0;
+    category_fun: #e37fa2;
     category_advanced_conversions: #cba6f7;
     category_templates: #c7a0f9;
 }
@@ -158,13 +158,13 @@ QTreeWidget#AchievementsCategoryTree::item {
 }
 
 QTreeWidget#AchievementsCategoryTree::item:hover {
-    background: #b292da;
-    color: #cba6f7;
+    background: #2a263a;
+    color: #cdd6f4;
 }
 
 QTreeWidget#AchievementsCategoryTree::item:selected {
-    background: #997ebc;
-    color: #cba6f7;
+    background: #38324b;
+    color: #cdd6f4;
 }
 
 QTreeWidget#AchievementsCategoryTree QHeaderView::section {

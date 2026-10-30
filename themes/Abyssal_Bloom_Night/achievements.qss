@@ -158,13 +158,13 @@ QTreeWidget#AchievementsCategoryTree::item {
 }
 
 QTreeWidget#AchievementsCategoryTree::item:hover {
-    background: #36d1b8;
-    color: #3ef0d2;
+    background: #0c282c;
+    color: #dff7f4;
 }
 
 QTreeWidget#AchievementsCategoryTree::item:selected {
-    background: #2fb29e;
-    color: #3ef0d2;
+    background: #113a3a;
+    color: #dff7f4;
 }
 
 QTreeWidget#AchievementsCategoryTree QHeaderView::section {
