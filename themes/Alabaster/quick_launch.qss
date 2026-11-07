@@ -1,0 +1,19 @@
+/* Editorial ivory with copper rules and serif, italic headlines. */
+QDialog#QuickLaunchDialog { background-color: #f7f3ec; color: #2c2616; border: 1px solid #c9b896; border-top: 2px solid #b8641f; border-radius: 0px; font-family: 'Segoe UI', sans-serif; }
+QLabel#QuickLaunchTitle { color: #a3571a; font-family: 'Georgia', 'Cambria', 'Times New Roman', serif; font-size: 18px; font-style: italic; font-weight: 700; background: transparent; }
+QLineEdit#QuickLaunchSearch {
+    background-color: #fffdf8; color: #2c2616; border: none; border-bottom: 1px solid #8f7e5c;
+    border-radius: 0px; padding: 7px 6px; font-size: 13px;
+    selection-background-color: rgba(184,100,31,0.28); selection-color: #2c2616; placeholder-text-color: #8f7e5c;
+}
+QLineEdit#QuickLaunchSearch:hover { border-bottom: 1px solid #a3571a; }
+QLineEdit#QuickLaunchSearch:focus { background-color: #ffffff; border-bottom: 2px solid #b8641f; }
+QLineEdit#QuickLaunchSearch QToolButton { background: transparent; color: #8f7e5c; border: none; padding: 2px; }
+QLineEdit#QuickLaunchSearch QToolButton:hover { color: #a3571a; }
+QStackedWidget#QuickLaunchResultStack { background: transparent; }
+QListWidget#QuickLaunchResults { background-color: #ffffff; color: #2c2616; border: none; border-top: 1px solid #ddd0b8; border-bottom: 1px solid #ddd0b8; border-radius: 0px; outline: none; font-size: 13px; }
+QListWidget#QuickLaunchResults::item { min-height: 22px; padding: 6px 10px; border-bottom: 1px solid #ece3d3; }
+QListWidget#QuickLaunchResults::item:hover { background-color: #fffdf8; }
+QListWidget#QuickLaunchResults::item:selected { background-color: #f2ecdf; color: #7a3f12; border-left: 3px solid #b8641f; font-weight: 700; }
+QLabel#QuickLaunchEmpty { background-color: #ffffff; color: #8f7e5c; border: none; border-top: 1px solid #ddd0b8; border-bottom: 1px solid #ddd0b8; border-radius: 0px; font-size: 13px; }
+QLabel#QuickLaunchHint { background: transparent; color: #8f7e5c; font-family: 'Georgia', serif; font-size: 11px; font-style: italic; padding: 1px 2px; }

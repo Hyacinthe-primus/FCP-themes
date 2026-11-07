@@ -1,0 +1,19 @@
+/* Control-panel charcoal, emerald status rail and amber focus ring. */
+QDialog#QuickLaunchDialog { background-color: #15171b; color: #e8eaed; border: 1px solid #2c3138; border-left: 3px solid #2f9e6b; border-radius: 2px; font-family: 'Cascadia Mono', 'Consolas', 'Courier New', monospace; }
+QLabel#QuickLaunchTitle { color: #3ab87e; font-family: 'Cascadia Mono', 'Consolas', 'Courier New', monospace; font-size: 15px; font-weight: 800; background: transparent; }
+QLineEdit#QuickLaunchSearch {
+    background-color: #1a1d22; color: #e8eaed; border: 1px solid #2c3138; border-left: 3px solid #2c3138;
+    border-radius: 2px; padding: 6px 10px; font-size: 13px;
+    selection-background-color: rgba(217,146,44,0.38); selection-color: #e8eaed; placeholder-text-color: #6a727b;
+}
+QLineEdit#QuickLaunchSearch:hover { border-color: #3d444c; border-left-color: #6a727b; }
+QLineEdit#QuickLaunchSearch:focus { border-color: #d9922c; border-left-color: #d9922c; }
+QLineEdit#QuickLaunchSearch QToolButton { background: transparent; color: #6a727b; border: none; padding: 2px; }
+QLineEdit#QuickLaunchSearch QToolButton:hover { color: #d9922c; }
+QStackedWidget#QuickLaunchResultStack { background: transparent; }
+QListWidget#QuickLaunchResults { background-color: #1e2126; color: #e8eaed; border: 1px solid #2c3138; border-radius: 2px; outline: none; font-size: 13px; }
+QListWidget#QuickLaunchResults::item { min-height: 22px; padding: 6px 10px; border-bottom: 1px solid #23262c; }
+QListWidget#QuickLaunchResults::item:hover { background-color: #23262c; }
+QListWidget#QuickLaunchResults::item:selected { background-color: rgba(47,158,107,0.18); color: #4ade80; border-left: 3px solid #2f9e6b; font-weight: 700; }
+QLabel#QuickLaunchEmpty { background-color: #1e2126; color: #6a727b; border: 1px solid #2c3138; border-radius: 2px; font-size: 13px; }
+QLabel#QuickLaunchHint { background: transparent; color: #6a727b; font-family: 'Cascadia Mono', 'Consolas', 'Courier New', monospace; font-size: 10px; padding: 1px 2px; }

@@ -75,7 +75,7 @@ Each file styles one part of the app. These eleven are required. The app rejects
 | `terms.qss` | The Terms of Use and Privacy dialogs. |
 | `terms_html.css` | The HTML content inside those dialogs (real CSS). |
 
-Five more files are optional. If you remove them, the app falls back to its own dark or light stylesheet matching your `kind`:
+Six more files are optional. If you remove them, the app falls back to its own dark or light stylesheet matching your `kind`:
 
 | File | What it styles |
 | --- | --- |
@@ -84,8 +84,9 @@ Five more files are optional. If you remove them, the app falls back to its own 
 | `word_to_pdf.qss` | The Word to PDF options dialog preview (the text area and its scrollbars). |
 | `buttons.qss` | The shared dialog action buttons (OK, Cancel, Decline, and the other action buttons). |
 | `achievements.qss` | The achievements dialog, custom-painted cards and progress widgets, and the unlock/rank popups. |
+| `quick_launch.qss` | The searchable Quick Launch dialog opened with **Ctrl+Shift+C**. |
 
-They need specific selectors, listed in the template README. Keep them as they are unless you restyle those rules too, and check the splash, the Quick Convert window, the Word to PDF preview, the dialog buttons and the achievements screens in the app. `achievements.qss` also needs its `AchievementsPalette` block so the XP ring, cards, rank badge and stat bars match the rest of the theme. Besides the core colors, the block accepts `font_family`, `ring_*`, `progress_*`, `stat_track`, `card_sheen`, `card_shadow`, `tier_<id>`, `category_<id>` and `rank_<id>` keys.
+They need specific selectors, listed in the template README. Keep them as they are unless you restyle those rules too, and check the splash, Quick Convert, Quick Launch, the Word to PDF preview, the dialog buttons and the achievements screens in the app. `quick_launch.qss` styles `QDialog#QuickLaunchDialog`, `QLabel#QuickLaunchTitle`, `QLineEdit#QuickLaunchSearch`, `QListWidget#QuickLaunchResults` and its item hover/selection states, `QLabel#QuickLaunchEmpty` and `QLabel#QuickLaunchHint`. `achievements.qss` also needs its `AchievementsPalette` block so the XP ring, cards, rank badge and stat bars match the rest of the theme. Besides the core colors, the block accepts `font_family`, `ring_*`, `progress_*`, `stat_track`, `card_sheen`, `card_shadow`, `tier_<id>`, `category_<id>` and `rank_<id>` keys.
 
 Things worth knowing:
 

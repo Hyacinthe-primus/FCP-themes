@@ -101,7 +101,7 @@ A `.fctheme` import is rejected if any of these files is missing:
 
 ## Optional files
 
-These five are used automatically when present. If you delete them, the app
+These six are used automatically when present. If you delete them, the app
 falls back to the dark/light stylesheet that matches `kind`.
 
 | File | What it styles |
@@ -111,6 +111,7 @@ falls back to the dark/light stylesheet that matches `kind`.
 | `word_to_pdf.qss` | Word to PDF options dialog preview |
 | `buttons.qss` | Shared dialog action buttons |
 | `achievements.qss` | Achievements dialog, cards, progress widgets and unlock popups |
+| `quick_launch.qss` | Searchable Quick Launch dialog opened with **Ctrl+Shift+C** |
 
 `splash.qss` must style `QFrame#SplashContainer`, `QLabel#SplashLogo`,
 `QLabel#SplashTitle`, `QLabel#SplashSubtitle`, `QProgressBar#SplashProgress`,
@@ -124,6 +125,12 @@ falls back to the dark/light stylesheet that matches `kind`.
 `word_to_pdf.qss` must style `QTextEdit` and its vertical and horizontal
 `QScrollBar` parts (`:vertical`, `::handle:vertical`, `:horizontal`,
 `::handle:horizontal`). Keep the preview text readable against the background.
+
+`quick_launch.qss` styles `QDialog#QuickLaunchDialog`,
+`QLabel#QuickLaunchTitle`, `QLineEdit#QuickLaunchSearch`,
+`QListWidget#QuickLaunchResults` and its item hover/selection states,
+`QLabel#QuickLaunchEmpty`, and `QLabel#QuickLaunchHint`. It is loaded when the
+dialog opens and reapplied if the app's theme changes while it is open.
 
 `buttons.qss` must style the shared action buttons, including their hover,
 pressed and disabled states: `QPushButton#BtnOK`, `QPushButton#BtnCancel`,

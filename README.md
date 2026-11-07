@@ -18,6 +18,8 @@ Custom themes for [File Converter Pro](https://file-converter-pro.org).
 
 Download a `.fctheme` file below, then in File Converter Pro go to **Settings**, **Themes**, click **Install a theme (.fctheme)** and pick the file. Click **Apply**, then **OK**.
 
+All themes include a dedicated style for the searchable **Quick Launch** window opened with **Ctrl+Shift+C**.
+
 ![The Themes tab in the settings dialog](docs/install-theme.png)
 
 ## Submitting a Theme

@@ -1,0 +1,30 @@
+/* Bioluminescent teal on deep-sea ink, with asymmetric panel corners. */
+QDialog#QuickLaunchDialog {
+    background-color: #04090f; color: #dff7f4; border: 1px solid rgba(62,240,210,0.24);
+    border-top-left-radius: 14px; border-bottom-right-radius: 14px;
+    border-top-right-radius: 4px; border-bottom-left-radius: 4px; font-family: 'Segoe UI', sans-serif;
+}
+QLabel#QuickLaunchTitle { color: #3ef0d2; font-size: 17px; font-weight: 700; background: transparent; }
+QLineEdit#QuickLaunchSearch {
+    background-color: #0b1a24; color: #dff7f4; border: 1px solid rgba(62,240,210,0.18);
+    border-radius: 6px; padding: 7px 10px; font-size: 13px;
+    selection-background-color: rgba(62,240,210,0.30); selection-color: #dff7f4; placeholder-text-color: #4f8a93;
+}
+QLineEdit#QuickLaunchSearch:hover { border-color: rgba(62,240,210,0.38); }
+QLineEdit#QuickLaunchSearch:focus { background-color: #071219; border-color: #3ef0d2; }
+QLineEdit#QuickLaunchSearch QToolButton { background: transparent; color: #4f8a93; border: none; padding: 2px; }
+QLineEdit#QuickLaunchSearch QToolButton:hover { color: #9ffbe9; }
+QStackedWidget#QuickLaunchResultStack { background: transparent; }
+QListWidget#QuickLaunchResults {
+    background-color: #071219; color: #dff7f4; border: 1px solid rgba(62,240,210,0.18);
+    border-top-left-radius: 12px; border-bottom-right-radius: 12px;
+    border-top-right-radius: 4px; border-bottom-left-radius: 4px; outline: none; font-size: 13px;
+}
+QListWidget#QuickLaunchResults::item { min-height: 22px; padding: 6px 10px; margin: 1px 3px; border-bottom: 1px solid rgba(62,240,210,0.08); }
+QListWidget#QuickLaunchResults::item:hover { background-color: #0b1a24; }
+QListWidget#QuickLaunchResults::item:selected {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(62,240,210,0.22), stop:1 rgba(62,240,210,0.02));
+    color: #9ffbe9; border-left: 3px solid #3ef0d2; font-weight: 600;
+}
+QLabel#QuickLaunchEmpty { background-color: #071219; color: #4f8a93; border: 1px solid rgba(62,240,210,0.18); border-radius: 8px; font-size: 13px; }
+QLabel#QuickLaunchHint { background: transparent; color: #4f8a93; font-size: 11px; padding: 1px 2px; }
