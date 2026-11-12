@@ -1,4 +1,4 @@
-<div id="toc" align="center"><a href="https://github.com/Hyacinthe-primus/File_Converter_Pro"><img src="https://raw.githubusercontent.com/Hyacinthe-primus/File_Converter_Pro/main/src/Assets/icon.png" width="64"></a><ul style="list-style:none"><summary><h2>Theme repository for FCP</h2></summary></ul></div>
+<div id="toc" align="center"><a href="https://github.com/Hyacinthe-primus/File-Converter-Pro"><img src="https://raw.githubusercontent.com/Hyacinthe-primus/File-Converter-Pro/main/src/Assets/icon.png" width="64"></a><ul style="list-style:none"><summary><h2>Theme repository for FCP</h2></summary></ul></div>
 
 
 > [!IMPORTANT]
